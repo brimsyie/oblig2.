@@ -1,2 +1,1 @@
-# oblig2.
-Oppgave 2 webutvikling
+Innlevering 2

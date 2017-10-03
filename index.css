@@ -1,0 +1,173 @@
+#grid {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	justify-content: space-between;
+	border:1px solid green;
+	grid-template-columns: 220px 1fr 1fr ;
+	grid-template-rows: 150px 60px auto auto 100px;
+	grid-template-areas: "headerBilde header header"
+											  "neby neby neby"
+					        		 "texts bilde bilde"
+					        	  	"hovedinnhold hovedinnhold hovedinnhold"
+				        			  "footer footer footer";
+}
+body{
+
+
+}
+#headerbilde {
+	grid-area: headerBilde;
+	height: 200px;
+}
+#neby{
+	grid-area: neby;
+	background-color: red;
+	color:white;
+	text-align: center;
+
+}
+header {
+	grid-area: header;
+	background: black;
+	color:white;
+	padding: 15px;
+	width: auto;
+}
+/* Bilder*/
+img#logo {
+	grid-area: headerBilde;
+	max-width: 100%;
+	height: 150px;
+}
+img#bilde {
+	grid-area: bilde;
+	max-width: 100%;
+	max-height: auto ;
+}
+/* Bilder slutt*/
+div.om {
+	grid-area: texts;
+	background: lightgrey;
+	color: black;
+	Padding: 15px;
+
+}
+/*Artikkler*/
+article{
+	grid-area: hovedinnhold;
+  width:calc( 100%/3);
+  background-color: #ccc;
+	border:1px solid black;
+	float:left;
+	box-sizing: border-box;
+}
+main {
+	grid-area: hovedinnhold;
+	background: white;
+}
+	/*Artikkel slutt*/
+/* Styling av linker */
+main nav ul li a{
+	text-decoration: none;
+	font-size: 16px;
+	margin-top:10px;
+	text-align: center;
+}
+
+nav ul li {
+	list-style: none;
+	display:inline-block;
+	margin: 15px;
+}
+a {
+	text-decoration: none;
+	text-align:center;
+	background-color: black;
+	border: 1px solid black;
+	border-radius: 2px;
+	color:white;
+
+	margin-top:0 auto;
+	padding: 5px;
+}
+
+}
+a:link {
+		color:black;
+}
+a:hover {
+	color: lightgreen;
+}
+a:visited {
+	color: red;
+}
+/*Linker slutt*/
+
+/*foten*/
+#fot{
+grid-area: footer;
+text-align:center;
+background-color: black;
+width: 100%;
+height: 100%;
+font-size: 20px;
+}
+#mainctx {
+	grid-area: bilde;
+	text-align: left;
+	padding: 20px;
+}
+/*Artikkelsidene*/
+#hode {
+	border:1px solid black;
+	text-align:center;
+	background-color: black;
+	max-width: 1165px;
+	margin:0 auto;
+	height: 200px;
+
+}
+/*header bildet*/
+#bilde1 {
+	max-width: 1165px;
+	height: 400px;
+margin-left: 220px;
+margin-top: 50px;
+}
+h1 {
+	font-size: 50px;
+}
+h2 {
+	padding: 15px;
+}
+p {
+	padding:20px;
+	margin:0 auto;
+	margin-top: 30px;
+	max-width: 1165px;
+}
+/*Tabellen på om-siden*/
+.tabell{
+	border:1px solid black;
+	width: 500px;
+	height: 100px;
+	text-align:center;
+	margin-left: 115px;
+	margin-top: 30px;
+	max-width: 1165px;
+}
+
+table tr th tr td a{
+	color:yellow;
+}
+/*Math Eksempel*/
+#kropp {
+	width: 1200px;
+	height: 100px;
+	padding:20px;
+	margin:0 auto;
+	max-width: 1165px;
+}
+/*Math Eksempel*/
+/*Artikkelside slutt*/

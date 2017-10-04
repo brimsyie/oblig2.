@@ -158,9 +158,9 @@ p {
 	max-width: 1165px;
 }
 
-table tr th tr td a{
-	color:yellow;
-}
+table tr td:nth-child(2) {
+	background-color: yellow}
+
 /*Math Eksempel*/
 #kropp {
 	width: 1200px;
